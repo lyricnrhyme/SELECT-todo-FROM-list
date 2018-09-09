@@ -14,8 +14,8 @@ CREATE TABLE tasks (
     id SERIAL PRIMARY KEY NOT NULL,
     title VARCHAR(255) NOT NULL,
     description TEXT NULL,
-    created_at TIMESTAMP DEFAULT now(),
-    updated_at TIMESTAMP NULL,
+    created_at TIMESTAMP WITHOUT TIME ZONE DEFAULT now(),
+    updated_at TIMESTAMP WITHOUT TIME ZONE NULL,
     completed BOOLEAN NULL
 );
 
