@@ -1,21 +1,4 @@
---CREATE TABLE users(
---	id SERIAL PRIMARY KEY,
---	name VARCHAR(100) NOT NULL
---);
---
---CREATE TABLE books(
---	id SERIAL PRIMARY KEY,
---	name VARCHAR(80) NOT NULL,
---	author_id INTEGER NOT NULL REFERENCES users(id)
---);
---
---INSERT INTO users (name) VALUES ('Jamie');
---
---INSERT INTO books (name, author_id) VALUES ('Harry Potter', 1);
-----
---DROP TABLE books;
-----
---DROP TABLE users;
+
 
 DROP DATABASE IF EXISTS todo_app;
 
